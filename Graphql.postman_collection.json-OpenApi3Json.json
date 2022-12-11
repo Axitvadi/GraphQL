@@ -1,0 +1,69 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Graphql",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/graphql": {
+      "post": {
+        "tags": [
+          "CLUB"
+        ],
+        "summary": "CREATE",
+        "operationId": "CREATE",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      },
+      "get": {
+        "tags": [
+          "CLUB"
+        ],
+        "summary": "READ ALL",
+        "operationId": "READALL",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearer": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "CLUB"
+    },
+    {
+      "name": "AUTH"
+    }
+  ]
+}
